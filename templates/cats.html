@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block breadcrumb %}
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">CATS</li>
+        </ol>
+    </nav>
+
+{% endblock %}
+{% block page_content %}
+    <div class="page-header">
+        <a class="btn btn-primary" href="{{ url_for('add_cats')}}" role="button">Dodaj wpis</a>
+        <h1>Cats page!</h1>
+    </div>
+{% endblock %}
